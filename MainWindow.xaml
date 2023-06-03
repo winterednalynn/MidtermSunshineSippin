@@ -1,0 +1,27 @@
+﻿<Window x:Class="MIDTERM2023SIPPINAPP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MIDTERM2023SIPPINAPP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Margin="0,0,0,-56">
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEEFFA6" Offset="0.073"/>
+                <GradientStop Color="#FFF39EEB" Offset="1"/>
+                <GradientStop Color="#FFE2CC63" Offset="0.174"/>
+                <GradientStop Color="#FFE85CBC" Offset="0.986"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <TextBlock Height="87" Canvas.Left="146" TextWrapping="Wrap" Canvas.Top="123" Width="414" FontFamily="Broadway" FontSize="72" HorizontalAlignment="Left" VerticalAlignment="Top"><Run Text="Sunshine "/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock Height="97" Canvas.Left="234" TextWrapping="Wrap" Canvas.Top="217" Width="398" FontFamily="Broadway" FontSize="72" HorizontalAlignment="Left" VerticalAlignment="Center"><Run Text="Sippin' "/><InlineUIContainer/><InlineUIContainer/></TextBlock>
+        <TextBlock Canvas.Left="109" TextWrapping="Wrap" Text="☀" Canvas.Top="97" Height="102" Width="106" FontSize="72" Foreground="#FFEEFC58" HorizontalAlignment="Left" VerticalAlignment="Top" Opacity="0.4"/>
+        <TextBlock Canvas.Left="521" TextWrapping="Wrap" Canvas.Top="217" Height="77" Width="135" Foreground="#FF610555"><Run FontFamily="Broadway" FontSize="72" Text="☕️ "/></TextBlock>
+        <Button x:Name="btnStartOrder" Content="𝓞𝓻𝓭𝓮𝓻 𝓞𝓷𝓵𝓲𝓷𝓮" Height="71" Canvas.Left="207" Canvas.Top="371" Width="328" Background="{x:Null}" FontSize="36" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" FontFamily="Lucida Calligraphy" Click="btnStartOrder_Click"/>
+        <TextBlock Height="47" Canvas.Left="10" TextWrapping="Wrap" Text="❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀              " Canvas.Top="10" Width="780" FontSize="36" Foreground="#FFFF0093"/>
+        <TextBlock Height="47" TextWrapping="Wrap" Text="❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀              " Canvas.Top="442" Width="790" FontSize="36" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="10"/>
+
+    </Canvas>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="MIDTERM2023SIPPINAPP.OnlineScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MIDTERM2023SIPPINAPP"
+        mc:Ignorable="d"
+        Title="OnlineScreen" Height="450" Width="800">
+    <Canvas>
+        <Canvas.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEDFF2A"/>
+                <GradientStop Color="#FF7CFFB8" Offset="1"/>
+                <GradientStop Color="#FFFF2DD4" Offset="0.715"/>
+            </LinearGradientBrush>
+        </Canvas.Background>
+        <RichTextBox x:Name="rtbHPDisplay" Height="241" Width="176" Canvas.Left="10" Canvas.Top="96" HorizontalAlignment="Left" VerticalAlignment="Center">
+        </RichTextBox>
+        <ListBox x:Name="lbBasket" Height="318" Width="309" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="209" Canvas.Top="58" HorizontalAlignment="Left" VerticalAlignment="Center" SelectionChanged="lbBasket_SelectionChanged"/>
+        <ListBox x:Name="lbPreviousTransaction" Height="323" Width="257" d:ItemsSource="{d:SampleData ItemCount=5}" Canvas.Left="533" Canvas.Top="58"/>
+        <ComboBox x:Name="cbMembers" Canvas.Left="556" Canvas.Top="17" Width="204" Height="36" HorizontalAlignment="Left" VerticalAlignment="Center" SelectionChanged="cbMembers_SelectionChanged"/>
+        <Button Content="Add Membership" Canvas.Left="10" Canvas.Top="361" Height="45" Width="176" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="22" FontFamily="Ink Free" FontWeight="Bold" Background="{x:Null}" BorderBrush="#FF260404" Click="Button_Click"/>
+        <Button x:Name="btnBuy" Content="Buy " Canvas.Left="533" Canvas.Top="384" Height="42" Width="109" FontSize="24" FontFamily="Ink Free" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="Black" Click="btnBuy_Click"/>
+        <Button x:Name="btnUsePoint" Content="Use Points" Canvas.Left="662" Canvas.Top="382" Height="42" Width="128" FontSize="24" FontFamily="Ink Free" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="#FF190303" Click="btnUsePoint_Click"/>
+        <TextBlock TextWrapping="Wrap" Canvas.Top="-5" Height="44" Width="497" HorizontalAlignment="Center" VerticalAlignment="Top"><Run Foreground="White" FontSize="36" Text="❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀❀"/></TextBlock>
+        <Button x:Name="btnBasket" Content="Add to Basket" Canvas.Left="248" Canvas.Top="384" Height="39" Width="175" HorizontalAlignment="Left" VerticalAlignment="Center" Background="{x:Null}" FontFamily="Ink Free" FontWeight="Bold" FontSize="20" Click="btnBasket_Click"/>
+
+
+    </Canvas>
+</Window>
